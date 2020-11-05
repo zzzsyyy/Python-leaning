@@ -35,7 +35,7 @@ def xh(N):
 def main():
     s = xh(N)
     p = s/N
-    print("对{:}个的概率是:{:.6f}".format(nm,p))
+    print("对{:}个的概率是:{:.6f}".format(n,p))
     return 
 
 main()
