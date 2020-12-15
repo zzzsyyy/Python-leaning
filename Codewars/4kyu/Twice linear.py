@@ -18,6 +18,7 @@ Note:
 Focus attention on efficiency
 '''
 
+#每次取由两种计算得到的较小者
 def dbl_linear(n):
     a = b = c = 0
     ls = [1]
@@ -34,5 +35,5 @@ def dbl_linear(n):
             ls.append(x)
             a+=1
             b+=1
-            c+=1
+            c+=1        #c用来拓展边界，即当a=b时，a&b都变化了，而ls并未变
     return ls[-1]
